@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div id="container">
+		{% include "includes/BackToHome.html" %}
+	</div>
+	<div id="container">			
+		{% for tweet in timeline_tweets %}
+			<p>{% autoescape off %}{{tweet}}{% endautoescape %}</p>
+		{% endfor %}
+	</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div id="container">
+		{% include "includes/BackToHome.html" %}
+	</div>
+	<div id="container">	
+		<table>
+			<tr>
+			  <td width=500px><b>Twitter Screen Name</td>
+			  <td width=500px><b>Total Urls Shared</td>
+			</tr>
+			{% for user,count in top_users.items %}
+			<tr>	
+				<td width=500px> {{ user }}</td>
+  				<td width=500px> {{ count }}</td>	
+  			</tr>
+			{% endfor %}
+		</table>
+	</div>
+{% endblock %}

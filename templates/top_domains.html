@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div id="container">
+		{% include "includes/BackToHome.html" %}
+	</div>
+	<div id="container">	
+		<table>
+			<tr>
+			  <td width=500px><b>Domain Name</td>
+			  <td width=500px><b>Hits</td>
+			</tr>
+			{% for domain,count in top_domains.items %}
+			<tr>	
+				<td width=500px> {{ domain }}</td>
+  				<td width=500px> {{ count }}</td>	
+  			</tr>
+			{% endfor %}
+		</table>
+	</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div id="container">
+		<img src="{{user.profile_image_url}}" />
+		<h3>{{user.name}}</h3>
+		<p>{{user.screen_name}}<p/>
+		<a href="/logout/"><button type="button">logout</button></a>
+		
+	</div>
+	<div id="container">
+		{% include "includes/GotoTimeline.html" %}
+	</div>
+	<div>
+	<div id="container">
+		{% include "includes/GotoTopUsers.html" %}
+	</div>
+	<div>
+	<div id="container">
+		{% include "includes/GotoTopDomains.html" %}
+	</div>
+{% endblock %}
