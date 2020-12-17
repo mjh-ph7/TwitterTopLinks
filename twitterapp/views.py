@@ -5,7 +5,7 @@ from .utils import *
 from django.contrib.auth import logout
 from django.http import *
 from django.shortcuts import render
-from django.urls import reverse
+from django.conf.urls import reverse
 
 
 # login page
