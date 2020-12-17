@@ -12,7 +12,7 @@ SECRET_KEY = 'srsesh7o1-a5u6g9o79rw(3qkd!7gb1zb(+m3@82gurfb5d5+1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [twitter-tl.herokuapp.com]
+ALLOWED_HOSTS = ['twitter-tl.herokuapp.com']
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
