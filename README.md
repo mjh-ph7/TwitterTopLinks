@@ -30,7 +30,7 @@ python3 manage.py runserver
 ```
 
 #### Callback URL
-Generate Twitter Credential from [Twitter Developer](https://developer.twitter.com/en), set the callback URLs in settings of Twitter Application to
+Generate Twitter Credential from [Twitter Developer](https://developer.twitter.com/en), set the callback URL in settings of Twitter Application to
 
 http://127.0.0.1:8000/callback/
 
