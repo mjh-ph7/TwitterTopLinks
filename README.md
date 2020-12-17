@@ -6,7 +6,7 @@
   - Show top domains shared
   - Show top sharers
   
-Use the app [here](twitter-tl.herokuapp.com)
+Use the app [here](https://twitter-tl.herokuapp.com)
 
 #### Installation
 Change directory to app folder
