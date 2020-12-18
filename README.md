@@ -15,6 +15,7 @@ Change directory to app folder
 ```
 pip3 install django==2.2.17
 pip3 install tweepy
+pip3 install psycopg2
 ```
 or
 ```

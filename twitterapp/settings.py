@@ -77,11 +77,14 @@ WSGI_APPLICATION = 'twitterapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ddrcafhk32j4fp',
+        'USER': 'inqqcrvlrqzygf',
+        'PASSWORD': '7c0892f8a642cc33d6349140ff01cb610fe6bcafddefc75284be101eb1fad8b1',
+        'PORT': 5432,
+        'HOST': 'ec2-54-236-122-55.compute-1.amazonaws.com',
     }
 }
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
