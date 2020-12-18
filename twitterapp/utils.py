@@ -106,7 +106,7 @@ def store_session_info(request, access_key, access_secret, user_data):
 def store_tweet_data(request, timeline_tweets, screen_name):
 	for tweet in timeline_tweets:
 		tweet_id_found = tweet.id
-		if not TweetTable.objects.filter(tweet_id=tweet_id_found).exists():
+		if not TweetTable.objects.filter(tweet_id=str(tweet_id_found)).exists():
 			db_row = TweetTable(tweet_id=tweet_id_found, timeline_screen_name=screen_name,\
 			tweet_text=tweet.text, tweet_entities=tweet.entities, \
 			tweet_screen_name=tweet.user.screen_name, tweet_user_name=tweet.user.name)
