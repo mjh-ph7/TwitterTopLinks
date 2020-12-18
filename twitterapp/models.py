@@ -13,7 +13,7 @@ class SessionData(models.Model):
 		return self.session_key,self.session_secret,self.screen_name,self.user_name
 
 class TweetTable(models.Model):
-	tweet_id = models.IntegerField(primary_key=True)
+	tweet_id = models.CharField(max_length=100, primary_key=True)
 	timeline_screen_name = models.CharField(max_length=100)
 	tweet_text = models.CharField(max_length=1000)
 	tweet_entities = models.CharField(max_length=10000)
